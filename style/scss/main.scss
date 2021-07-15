@@ -10,7 +10,20 @@ h1 {
 }
 
 body {
-	background-image: url(../../imgs/fundo.jpg);
+	background: #3ca55c; /* fallback for old browsers */
+	background: -webkit-linear-gradient(
+		to right,
+		#b5ac49,
+		#3ca55c
+	); /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(
+		to right,
+		#b5ac49,
+		#3ca55c
+	); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	background-position: center center;
+	background-size: cover;
+	background-repeat: no-repeat;
 }
 
 #container {
@@ -23,7 +36,7 @@ body {
 
 #fundoGame {
 	width: 950px;
-	height: 630px;
+	height: 580px;
 	background-image: url(../../imgs/fundo_game.jpg);
 	border-color: #fff;
 	border-style: solid;
